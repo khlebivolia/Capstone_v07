@@ -3,7 +3,7 @@ from django.http import JsonResponse
 import openai
 
 # Asegúrate de que ya tienes configurada tu clave API
-openai.api_key = 'sk-MotllUG8J3GuxRpsg8QJOUCNefdkMj8_UUSiE8Q0xgT3BlbkFJE3WMS_6VT4a3BYMnxxNDfH8bjhNxzJube-_vmIFQEA'
+openai.api_key = ''
 
 # Vista para la página principal
 def index(request):
