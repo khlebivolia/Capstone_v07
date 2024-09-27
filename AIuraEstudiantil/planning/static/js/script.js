@@ -39,3 +39,23 @@ document.getElementById('planningForm').onsubmit = function(event) {
         alert("Hubo un error: " + error);
     });
 };
+
+// Función para generar y descargar el PDF usando jsPDF
+function downloadPDF(planText) {
+    const { jsPDF } = window.jspdf; // Asegurarse de que jsPDF está disponible
+    const doc = new jsPDF();
+
+    // Dividir el texto en líneas para no sobrepasar los márgenes
+    var lines = doc.splitTextToSize(planText, 180);
+
+    // Añadir el título del PDF
+    doc.setFontSize(16);
+    doc.text("Planificación Generada", 10, 10);
+
+    // Añadir el contenido generado al PDF
+    doc.setFontSize(12);
+    doc.text(lines, 10, 20);
+
+    // Descargar el archivo PDF
+    doc.save("planificacion.pdf");
+}

@@ -9,6 +9,8 @@
     
     <!-- Cargar el archivo CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+     <!-- Cargar la librería jsPDF desde un CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -64,6 +66,9 @@
             <div id="generatedPlans" style="display:none;">
                 <h3>Planificación Generada</h3>
                 <div id="plansContent"></div> <!-- Aquí se llenará la planificación generada -->
+                <!-- Botón para descargar el PDF -->
+                <button id="downloadPDF" style="display:none;">Descargar PDF</button>
+
             </div>
         </div>
     </div>

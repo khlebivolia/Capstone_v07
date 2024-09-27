@@ -211,3 +211,20 @@ button:hover {
     border-left: 4px solid #6b53f5;
     border-radius: 5px;
 }
+
+#downloadPDF {
+    display: inline; /* Esto se cambiará dinámicamente desde JavaScript */
+    background-color: #6b53f5; /* Color de fondo similar al botón de generar planificación */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#downloadPDF:hover {
+    background-color: #5437d6;
+}
