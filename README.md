@@ -5,7 +5,7 @@
 - Francisco Vega
 
 ## Aiura estudiantil
-- LTS con planificación asistida por IA.
+- LMS con planificación asistida por IA.
 
 ## Insumos
 1. [Jira](https://duocuc-team-v2lmloev.atlassian.net/jira/software/projects/AES/boards/1/timeline)
